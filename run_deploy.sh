@@ -13,7 +13,8 @@ function init_config_file() {
 function deploy_uni_v3_contracts() {
   pushd ./uniswap-v3
   yarn install
-  OUTPUT_FILE="../uniswap_deploy_output.txt"
+  mkdir -p ../output
+  OUTPUT_FILE="../output/uniswap_deploy_output.txt"
   export DEPLOY_RESULT=$(yarn start --private-key 0x$PRIVATE_KEY --json-rpc https://prealpha.scroll.io/l2 --weth9-address $WETH9_ADDRESS --native-currency-label ETH --owner-address $OWNER_ADDRESS --confirmations 1 > $OUTPUT_FILE)
   popd
 }
