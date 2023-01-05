@@ -15,7 +15,7 @@ function deploy_uni_v3_contracts() {
   yarn install
   mkdir -p ../output
   OUTPUT_FILE="../output/uniswap_deploy_output.txt"
-  export DEPLOY_RESULT=$(yarn start --private-key 0x$PRIVATE_KEY --json-rpc https://prealpha.scroll.io/l2 --weth9-address $WETH9_ADDRESS --native-currency-label ETH --owner-address $OWNER_ADDRESS --confirmations 1 > $OUTPUT_FILE)
+  export DEPLOY_RESULT=$(yarn start --private-key 0x$PRIVATE_KEY --json-rpc https://prealpha-rpc.scroll.io/l2 --weth9-address $WETH9_ADDRESS --native-currency-label ETH --owner-address $OWNER_ADDRESS --confirmations 1 > $OUTPUT_FILE)
   popd
 }
 
