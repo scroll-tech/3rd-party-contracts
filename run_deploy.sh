@@ -29,5 +29,5 @@ function deploy_uni_v2_contracts() {
 }
 
 init_config_file
-#deploy_uni_v3_contracts
+deploy_uni_v3_contracts
 deploy_uni_v2_contracts
