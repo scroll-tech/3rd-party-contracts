@@ -1,3 +1,9 @@
 [submodule "uniswap-v3"]
 	path = uniswap-v3
 	url = https://github.com/Uniswap/deploy-v3.git
+[submodule "uniswap-v2/v2-contracts/v2-periphery"]
+	path = uniswap-v2/v2-contracts/v2-periphery
+	url = https://github.com/scroll-dev/v2-periphery.git
+[submodule "uniswap-v2/v2-contracts/v2-core"]
+	path = uniswap-v2/v2-contracts/v2-core
+	url = https://github.com/Uniswap/v2-core.git
