@@ -7,3 +7,6 @@
 [submodule "uniswap-v2/v2-contracts/v2-core"]
 	path = uniswap-v2/v2-contracts/v2-core
 	url = https://github.com/Uniswap/v2-core.git
+[submodule "multicall/multicall"]
+	path = multicall/multicall
+	url = https://github.com/makerdao/multicall

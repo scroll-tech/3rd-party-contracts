@@ -28,6 +28,16 @@ function deploy_uni_v2_contracts() {
   popd
 }
 
+function deploy_multicall() {
+  pushd ./multicall
+  yarn install
+  mkdir -p ../output
+  OUTPUT_FILE="../output/multicall_deploy.txt"
+  export DEPLOY_RESULT=$(npx hardhat run scripts/deploy.js > $OUTPUT_FILE)
+  popd
+}
+
 init_config_file
 deploy_uni_v3_contracts
 deploy_uni_v2_contracts
+deploy_multicall
